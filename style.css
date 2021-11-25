@@ -16,7 +16,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 62.5%;
     font-family: 'Karla', sans-serif; 
     box-sizing: border-box;
 }
@@ -33,7 +33,8 @@ body {
 }
 
 main {
-    width: 85%;
+    /* max-width: 375px; */
+    width: clamp(37.5rem, 22.0455rem + 34.5455vw, 63.5rem);
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .3);
     border-radius: .5rem;
 }
@@ -44,7 +45,7 @@ section {
 
 .offer {
     background-color: #fff;
-   border-radius: .5rem .5rem 0 0;
+    border-radius: .5rem .5rem 0 0;
 }
 
 .offer-title {
@@ -108,7 +109,7 @@ section {
 .benefits {
     background-color: hsla(179, 62%, 43%, .6);
     color: white;
-   border-radius: 0 0 .5rem .5rem;
+    border-radius: 0 0 .5rem .5rem;
 }
 
 .benefits-title {
@@ -125,7 +126,7 @@ section {
 @media (min-width: 1024px) {
     main {
         display: grid;
-        width: 40%;
+        max-width: 700px;
         grid-template-columns: 1fr 1fr;
     }
 
